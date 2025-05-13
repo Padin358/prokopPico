@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Vložení TailwindCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Název stránky -->
+  <title>idk</title>
+</head>
+<!-- 
+bg-gray-900:
+  bg -> background(pozadí)
+  gray -> šedá - barva
+  900 -> odstín / brightness
+
+text-gray-100
+  text -> text
+  gray -> šedá - barva
+  100 -> odstín / brightness
+-->
+<body class="bg-gray-900 text-gray-100">
+  <header>
+    <!-- 
+    text-center:
+      text -> text
+      center -> střed
+      TAKŽE: Vycentrování textu
+    
+    text-3xl:
+      text -> text
+      3xl -> Velikost(povolené: sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl)
+
+    font-semibold:
+      font -> font
+      semibold -> tloušťka textu(povolené: thin, extrathin, light, normal, medium, semibold, bold, extrabold, black)
+
+      <h1>:
+        HEADER1 - NADPIS1
+    -->
+    <h1 class="text-center text-3xl font-semibold">Hello, world!</h1>
+  </header>
+  <main>
+
+    <button>Toto je button</button>
+<!-- 
+a - anchor: odkaz - používá se místo buttonu, protože button je hlavně pro css
+-->
+    <a href="">Toto je anchor</a>
+
+    <section></section>
+
+<!-- 
+div: lepší container / sekce    
+-->
+    <div></div>
+
+    <span></span>
+
+<!-- 
+img - image, obrázek:
+  src - source: zdroj - kde se obrázek nachází
+  
+nav - navigation, navigace:
+  seznam odkazů na další podstránky
+
+ul - unsorted list, netřízený seznam
+
+li - list item, věc v seznamu
+-->
+    <img src="" alt="">
+
+    <nav></nav>
+
+    <ul></ul>
+
+    <li></li>
+
+<!-- 
+input - vstup:
+  type: typ vstupu - možných hodně, nejzákladnější je text
+-->
+    <input type="text">
+    
+<!-- 
+select - výběr:
+  name: jméno
+  id: id
+  onchange: co se má stát při změně
+
+option - možnost:
+  value: hodnota
+-->
+    <select name="pico" id="input" onchange="cokoliv(this.value)">
+      <option value="Ahoj">Ahoj</option>
+      <option value="Sbohem">Sbohem</option>
+    </select>
+
+    <p></p>
+
+  </main>
+  <footer>
+
+  </footer>
+
+<!-- 
+script - JS:
+  src: zdroj - soubor kde se JS kód nachází
+-->
+  <script src="app.js"></script>
+</body>
+</html>
